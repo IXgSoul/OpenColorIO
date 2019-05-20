@@ -816,7 +816,7 @@ void OpenColorIO_AE_Context::InitOCIOGL()
 }
 
 
-const char * g_fragShaderText = ""
+static const char * g_fragShaderText = ""
 "\n"
 "uniform sampler2D tex1;\n"
 "\n"
