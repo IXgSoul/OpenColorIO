@@ -238,6 +238,48 @@
 			remoteGlobalIDString = 2ACF559B1477692300991ED5;
 			remoteInfo = ilmbasehalf;
 		};
+		2AB2C932234D1A7600F62DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AB2C92C234D1A7500F62DB3 /* yaml.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2ACF559C1477692300991ED5;
+			remoteInfo = yaml;
+		};
+		2AB2C938234D1A7600F62DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AB2C934234D1A7600F62DB3 /* pystring.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2AEABA0E23424ED50053BCB6;
+			remoteInfo = pystring;
+		};
+		2AB2C93E234D1A7600F62DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AB2C93A234D1A7600F62DB3 /* expat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2ACF559C1477692300991ED5;
+			remoteInfo = expat;
+		};
+		2AB2C940234D1A8F00F62DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AB2C93A234D1A7600F62DB3 /* expat.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ACF559B1477692300991ED5;
+			remoteInfo = expat;
+		};
+		2AB2C942234D1A8F00F62DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AB2C934234D1A7600F62DB3 /* pystring.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AEABA0D23424ED50053BCB6;
+			remoteInfo = pystring;
+		};
+		2AB2C944234D1A8F00F62DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AB2C92C234D1A7500F62DB3 /* yaml.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ACF559B1477692300991ED5;
+			remoteInfo = yaml;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -421,6 +463,9 @@
 		2A9820CB227FAEB20060FDD2 /* glsl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glsl.cpp; sourceTree = "<group>"; };
 		2A9820CC227FAEB20060FDD2 /* glsl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glsl.h; sourceTree = "<group>"; };
 		2AB2C901234D0F6600F62DB3 /* ilmbasehalf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ilmbasehalf.xcodeproj; path = ext/ilmbasehalf.xcodeproj; sourceTree = "<group>"; };
+		2AB2C92C234D1A7500F62DB3 /* yaml.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = yaml.xcodeproj; path = ext/yaml.xcodeproj; sourceTree = "<group>"; };
+		2AB2C934234D1A7600F62DB3 /* pystring.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pystring.xcodeproj; path = ext/pystring.xcodeproj; sourceTree = "<group>"; };
+		2AB2C93A234D1A7600F62DB3 /* expat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = expat.xcodeproj; path = ext/expat.xcodeproj; sourceTree = "<group>"; };
 		2ACF567114776A0A00991ED5 /* libOpenColorIO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpenColorIO.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACF573E14776B7000991ED5 /* OpenColorABI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenColorABI.h; sourceTree = "<group>"; };
 		2AEAB9E023424D090053BCB6 /* DynamicProperty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DynamicProperty.cpp; sourceTree = "<group>"; };
@@ -470,6 +515,9 @@
 				2ACF573E14776B7000991ED5 /* OpenColorABI.h */,
 				2A981E28227F9FF00060FDD2 /* OpenColorIO */,
 				2A9820C7227FAEB20060FDD2 /* utils */,
+				2AB2C93A234D1A7600F62DB3 /* expat.xcodeproj */,
+				2AB2C934234D1A7600F62DB3 /* pystring.xcodeproj */,
+				2AB2C92C234D1A7500F62DB3 /* yaml.xcodeproj */,
 				2AB2C901234D0F6600F62DB3 /* ilmbasehalf.xcodeproj */,
 				034768DDFF38A45A11DB9C8B /* Products */,
 			);
@@ -854,6 +902,30 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2AB2C92D234D1A7500F62DB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AB2C933234D1A7600F62DB3 /* libyaml.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AB2C935234D1A7600F62DB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AB2C939234D1A7600F62DB3 /* libpystring.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AB2C93B234D1A7600F62DB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AB2C93F234D1A7600F62DB3 /* libexpat.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2AEAB9EE23424D770053BCB6 /* exposurecontrast */ = {
 			isa = PBXGroup;
 			children = (
@@ -973,6 +1045,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				2AB2C941234D1A8F00F62DB3 /* PBXTargetDependency */,
+				2AB2C943234D1A8F00F62DB3 /* PBXTargetDependency */,
+				2AB2C945234D1A8F00F62DB3 /* PBXTargetDependency */,
 				2AB2C90E234D0F8100F62DB3 /* PBXTargetDependency */,
 			);
 			name = OpenColorIO;
@@ -1002,8 +1077,20 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 2AB2C93B234D1A7600F62DB3 /* Products */;
+					ProjectRef = 2AB2C93A234D1A7600F62DB3 /* expat.xcodeproj */;
+				},
+				{
 					ProductGroup = 2AB2C902234D0F6600F62DB3 /* Products */;
 					ProjectRef = 2AB2C901234D0F6600F62DB3 /* ilmbasehalf.xcodeproj */;
+				},
+				{
+					ProductGroup = 2AB2C935234D1A7600F62DB3 /* Products */;
+					ProjectRef = 2AB2C934234D1A7600F62DB3 /* pystring.xcodeproj */;
+				},
+				{
+					ProductGroup = 2AB2C92D234D1A7500F62DB3 /* Products */;
+					ProjectRef = 2AB2C92C234D1A7500F62DB3 /* yaml.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1033,6 +1120,27 @@
 			fileType = "compiled.mach-o.executable";
 			path = toFloat;
 			remoteRef = 2AB2C90B234D0F6600F62DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AB2C933234D1A7600F62DB3 /* libyaml.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyaml.a;
+			remoteRef = 2AB2C932234D1A7600F62DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AB2C939234D1A7600F62DB3 /* libpystring.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libpystring.a;
+			remoteRef = 2AB2C938234D1A7600F62DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AB2C93F234D1A7600F62DB3 /* libexpat.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libexpat.a;
+			remoteRef = 2AB2C93E234D1A7600F62DB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1172,6 +1280,21 @@
 			isa = PBXTargetDependency;
 			name = ilmbasehalf;
 			targetProxy = 2AB2C90D234D0F8100F62DB3 /* PBXContainerItemProxy */;
+		};
+		2AB2C941234D1A8F00F62DB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = expat;
+			targetProxy = 2AB2C940234D1A8F00F62DB3 /* PBXContainerItemProxy */;
+		};
+		2AB2C943234D1A8F00F62DB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pystring;
+			targetProxy = 2AB2C942234D1A8F00F62DB3 /* PBXContainerItemProxy */;
+		};
+		2AB2C945234D1A8F00F62DB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = yaml;
+			targetProxy = 2AB2C944234D1A8F00F62DB3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
