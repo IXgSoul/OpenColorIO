@@ -325,8 +325,8 @@ static PF_Err DrawEvent(
                 
                 if(arb_data->source == OCIO_SOURCE_ENVIRONMENT)
                 {
-					std::string env;
-					OpenColorIO_AE_Context::getenvOCIO(env);
+                    std::string env;
+                    OpenColorIO_AE_Context::getenvOCIO(env);
                     
                     if(!env.empty())
                         file_string = env;
@@ -743,8 +743,8 @@ static void DoClickConfig(
         if(choice == 0)
         {
             // $OCIO
-			std::string env;
-			OpenColorIO_AE_Context::getenvOCIO(env);
+            std::string env;
+            OpenColorIO_AE_Context::getenvOCIO(env);
             
             if(!env.empty())
             {

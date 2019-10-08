@@ -268,7 +268,7 @@ resource 'aete' (ResourceID, plugInName " dictionary", purgeable)
                 "Cubic",
                 interpCubic,
                 "Cubic Interpolation",
-				
+                
                 "Best",
                 interpBest,
                 "Best Interpolation"

@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: BSD-3-Clause
 // Copyright Contributors to the OpenColorIO Project.
+
 #include "OpenColorIO_PS_Context.h"
 
 #include <assert.h>
@@ -112,7 +113,7 @@ OpenColorIO_PS_Context::getConvertProcessor(const std::string &inputSpace, const
     transform->setDirection(OCIO::TRANSFORM_DIR_FORWARD);
     
     OCIO::ConstProcessorRcPtr processor = _config->getProcessor(transform);
-	
+    
     OCIO::ConstCPUProcessorRcPtr cpu_processor = processor->getDefaultCPUProcessor();
     
     return cpu_processor;
@@ -133,7 +134,7 @@ OpenColorIO_PS_Context::getDisplayProcessor(const std::string &inputSpace, const
     OCIO::ConstProcessorRcPtr processor = _config->getProcessor(ocio_transform);
     
     OCIO::ConstCPUProcessorRcPtr cpu_processor = processor->getDefaultCPUProcessor();
-	
+    
     return cpu_processor;
 }
 
@@ -152,9 +153,9 @@ OpenColorIO_PS_Context::getLUTProcessor(OCIO::Interpolation interpolation, OCIO:
     OCIO::ConstProcessorRcPtr processor = _config->getProcessor(transform);
     
     OCIO::ConstCPUProcessorRcPtr cpu_processor = (direction == OCIO::TRANSFORM_DIR_INVERSE ?
-    												processor->getOptimizedCPUProcessor(OCIO::OPTIMIZATION_DEFAULT, OCIO::FINALIZATION_EXACT) :
-    												processor->getDefaultCPUProcessor());
-	
+                                                    processor->getOptimizedCPUProcessor(OCIO::OPTIMIZATION_DEFAULT, OCIO::FINALIZATION_EXACT) :
+                                                    processor->getDefaultCPUProcessor());
+    
     return cpu_processor;
 }
 
@@ -278,14 +279,14 @@ void
 OpenColorIO_PS_Context::getenv(const char *name, std::string &value)
 {
 #ifdef __APPLE__
-	char *env = std::getenv(name);
+    char *env = std::getenv(name);
 
-	value = (env != NULL ? env : "");
+    value = (env != NULL ? env : "");
 #else
-	char env[1024] = { '\0' };
+    char env[1024] = { '\0' };
 
-	const DWORD result = GetEnvironmentVariable(name, env, 1023);
+    const DWORD result = GetEnvironmentVariable(name, env, 1023);
 
-	value = (result > 0 ? env : "");
+    value = (result > 0 ? env : "");
 #endif
 }
