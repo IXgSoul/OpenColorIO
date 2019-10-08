@@ -209,6 +209,37 @@
 		2AEABA70234259160053BCB6 /* XMLWriterUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AEABA6E234259160053BCB6 /* XMLWriterUtils.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2AB2C907234D0F6600F62DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AB2C901234D0F6600F62DB3 /* ilmbasehalf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2ACF559C1477692300991ED5;
+			remoteInfo = ilmbasehalf;
+		};
+		2AB2C909234D0F6600F62DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AB2C901234D0F6600F62DB3 /* ilmbasehalf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2AEAB9BD233EE7380053BCB6;
+			remoteInfo = eLut;
+		};
+		2AB2C90B234D0F6600F62DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AB2C901234D0F6600F62DB3 /* ilmbasehalf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2AEAB9CE233EE8150053BCB6;
+			remoteInfo = toFloat;
+		};
+		2AB2C90D234D0F8100F62DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AB2C901234D0F6600F62DB3 /* ilmbasehalf.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ACF559B1477692300991ED5;
+			remoteInfo = ilmbasehalf;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2A981E29227F9FF00060FDD2 /* Baker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Baker.cpp; sourceTree = "<group>"; };
 		2A981E2A227F9FF00060FDD2 /* BitDepthUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitDepthUtils.cpp; sourceTree = "<group>"; };
@@ -389,6 +420,7 @@
 		2A981EF6227F9FF00060FDD2 /* RangeTransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RangeTransform.cpp; sourceTree = "<group>"; };
 		2A9820CB227FAEB20060FDD2 /* glsl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glsl.cpp; sourceTree = "<group>"; };
 		2A9820CC227FAEB20060FDD2 /* glsl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glsl.h; sourceTree = "<group>"; };
+		2AB2C901234D0F6600F62DB3 /* ilmbasehalf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ilmbasehalf.xcodeproj; path = ext/ilmbasehalf.xcodeproj; sourceTree = "<group>"; };
 		2ACF567114776A0A00991ED5 /* libOpenColorIO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpenColorIO.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACF573E14776B7000991ED5 /* OpenColorABI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenColorABI.h; sourceTree = "<group>"; };
 		2AEAB9E023424D090053BCB6 /* DynamicProperty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DynamicProperty.cpp; sourceTree = "<group>"; };
@@ -438,6 +470,7 @@
 				2ACF573E14776B7000991ED5 /* OpenColorABI.h */,
 				2A981E28227F9FF00060FDD2 /* OpenColorIO */,
 				2A9820C7227FAEB20060FDD2 /* utils */,
+				2AB2C901234D0F6600F62DB3 /* ilmbasehalf.xcodeproj */,
 				034768DDFF38A45A11DB9C8B /* Products */,
 			);
 			name = OpenColorIO;
@@ -811,6 +844,16 @@
 			path = oglbuilder;
 			sourceTree = "<group>";
 		};
+		2AB2C902234D0F6600F62DB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AB2C908234D0F6600F62DB3 /* libilmbasehalf.a */,
+				2AB2C90A234D0F6600F62DB3 /* eLut */,
+				2AB2C90C234D0F6600F62DB3 /* toFloat */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2AEAB9EE23424D770053BCB6 /* exposurecontrast */ = {
 			isa = PBXGroup;
 			children = (
@@ -930,6 +973,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2AB2C90E234D0F8100F62DB3 /* PBXTargetDependency */,
 			);
 			name = OpenColorIO;
 			productName = OpenColorIO;
@@ -956,12 +1000,42 @@
 			mainGroup = 0867D691FE84028FC02AAC07 /* OpenColorIO */;
 			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2AB2C902234D0F6600F62DB3 /* Products */;
+					ProjectRef = 2AB2C901234D0F6600F62DB3 /* ilmbasehalf.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2ACF567014776A0A00991ED5 /* OpenColorIO */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2AB2C908234D0F6600F62DB3 /* libilmbasehalf.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libilmbasehalf.a;
+			remoteRef = 2AB2C907234D0F6600F62DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AB2C90A234D0F6600F62DB3 /* eLut */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = eLut;
+			remoteRef = 2AB2C909234D0F6600F62DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AB2C90C234D0F6600F62DB3 /* toFloat */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = toFloat;
+			remoteRef = 2AB2C90B234D0F6600F62DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2ACF566E14776A0A00991ED5 /* Sources */ = {
@@ -1092,6 +1166,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AB2C90E234D0F8100F62DB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ilmbasehalf;
+			targetProxy = 2AB2C90D234D0F8100F62DB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB916508733D950010E9CD /* Debug */ = {
