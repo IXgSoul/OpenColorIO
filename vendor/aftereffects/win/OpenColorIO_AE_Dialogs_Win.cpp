@@ -87,14 +87,14 @@ static void MakeFilterText(char *filter_text,
     AppendNull(combined_entry, combined_length);
 
 
-	assert(((do_combined ? combined_length : 0) + seperate_length) < 1024);
+    assert(((do_combined ? combined_length : 0) + seperate_length) < 1024);
 
     char *in = combined_entry;
     char *out = filter_text;
 
     if(do_combined)
     {
-		assert(combined_length < 512);
+        assert(combined_length < 512);
 
         for(int i=0; i < combined_length; i++)
             *out++ = *in++;
@@ -102,7 +102,7 @@ static void MakeFilterText(char *filter_text,
 
     in = seperate_entries;
 
-	assert(seperate_length < 1024);
+    assert(seperate_length < 1024);
 
     for(int i=0; i < seperate_length; i++)
         *out++ = *in++;
@@ -115,65 +115,65 @@ static void MakeFilterText(char *filter_text,
 // victimized, we copy it here and replace it with our own myOPENFILENAME.
 #pragma pack(push, 8)
 typedef struct mytagOFNA {
-	DWORD        lStructSize;
-	HWND         hwndOwner;
-	HINSTANCE    hInstance;
-	LPCSTR       lpstrFilter;
-	LPSTR        lpstrCustomFilter;
-	DWORD        nMaxCustFilter;
-	DWORD        nFilterIndex;
-	LPSTR        lpstrFile;
-	DWORD        nMaxFile;
-	LPSTR        lpstrFileTitle;
-	DWORD        nMaxFileTitle;
-	LPCSTR       lpstrInitialDir;
-	LPCSTR       lpstrTitle;
-	DWORD        Flags;
-	WORD         nFileOffset;
-	WORD         nFileExtension;
-	LPCSTR       lpstrDefExt;
-	LPARAM       lCustData;
-	LPOFNHOOKPROC lpfnHook;
-	LPCSTR       lpTemplateName;
+    DWORD        lStructSize;
+    HWND         hwndOwner;
+    HINSTANCE    hInstance;
+    LPCSTR       lpstrFilter;
+    LPSTR        lpstrCustomFilter;
+    DWORD        nMaxCustFilter;
+    DWORD        nFilterIndex;
+    LPSTR        lpstrFile;
+    DWORD        nMaxFile;
+    LPSTR        lpstrFileTitle;
+    DWORD        nMaxFileTitle;
+    LPCSTR       lpstrInitialDir;
+    LPCSTR       lpstrTitle;
+    DWORD        Flags;
+    WORD         nFileOffset;
+    WORD         nFileExtension;
+    LPCSTR       lpstrDefExt;
+    LPARAM       lCustData;
+    LPOFNHOOKPROC lpfnHook;
+    LPCSTR       lpTemplateName;
 #ifdef _MAC
-	LPEDITMENU   lpEditInfo;
-	LPCSTR       lpstrPrompt;
+    LPEDITMENU   lpEditInfo;
+    LPCSTR       lpstrPrompt;
 #endif
 #if (_WIN32_WINNT >= 0x0500)
-	void *        pvReserved;
-	DWORD        dwReserved;
-	DWORD        FlagsEx;
+    void *        pvReserved;
+    DWORD        dwReserved;
+    DWORD        FlagsEx;
 #endif // (_WIN32_WINNT >= 0x0500)
 } myOPENFILENAMEA, *myLPOPENFILENAMEA;
 typedef struct mytagOFNW {
-	DWORD        lStructSize;
-	HWND         hwndOwner;
-	HINSTANCE    hInstance;
-	LPCWSTR      lpstrFilter;
-	LPWSTR       lpstrCustomFilter;
-	DWORD        nMaxCustFilter;
-	DWORD        nFilterIndex;
-	LPWSTR       lpstrFile;
-	DWORD        nMaxFile;
-	LPWSTR       lpstrFileTitle;
-	DWORD        nMaxFileTitle;
-	LPCWSTR      lpstrInitialDir;
-	LPCWSTR      lpstrTitle;
-	DWORD        Flags;
-	WORD         nFileOffset;
-	WORD         nFileExtension;
-	LPCWSTR      lpstrDefExt;
-	LPARAM       lCustData;
-	LPOFNHOOKPROC lpfnHook;
-	LPCWSTR      lpTemplateName;
+    DWORD        lStructSize;
+    HWND         hwndOwner;
+    HINSTANCE    hInstance;
+    LPCWSTR      lpstrFilter;
+    LPWSTR       lpstrCustomFilter;
+    DWORD        nMaxCustFilter;
+    DWORD        nFilterIndex;
+    LPWSTR       lpstrFile;
+    DWORD        nMaxFile;
+    LPWSTR       lpstrFileTitle;
+    DWORD        nMaxFileTitle;
+    LPCWSTR      lpstrInitialDir;
+    LPCWSTR      lpstrTitle;
+    DWORD        Flags;
+    WORD         nFileOffset;
+    WORD         nFileExtension;
+    LPCWSTR      lpstrDefExt;
+    LPARAM       lCustData;
+    LPOFNHOOKPROC lpfnHook;
+    LPCWSTR      lpTemplateName;
 #ifdef _MAC
-	LPEDITMENU   lpEditInfo;
-	LPCSTR       lpstrPrompt;
+    LPEDITMENU   lpEditInfo;
+    LPCSTR       lpstrPrompt;
 #endif
 #if (_WIN32_WINNT >= 0x0500)
-	void *        pvReserved;
-	DWORD        dwReserved;
-	DWORD        FlagsEx;
+    void *        pvReserved;
+    DWORD        dwReserved;
+    DWORD        FlagsEx;
 #endif // (_WIN32_WINNT >= 0x0500)
 } myOPENFILENAMEW, *myLPOPENFILENAMEW;
 #ifdef UNICODE

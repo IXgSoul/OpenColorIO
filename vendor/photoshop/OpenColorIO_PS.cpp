@@ -303,8 +303,8 @@ static void InitGlobals(Ptr globalPtr)
     
     
     // set default with environment variable if it's set
-	std::string env;
-	OpenColorIO_PS_Context::getenvOCIO(env);
+    std::string env;
+    OpenColorIO_PS_Context::getenvOCIO(env);
     
     if(!env.empty())
     {
@@ -579,8 +579,8 @@ static void DoStart(GPtr globals)
     {
         if(globals->source == OCIO_SOURCE_ENVIRONMENT)
         {
-			std::string env;
-			OpenColorIO_PS_Context::getenvOCIO(env);
+            std::string env;
+            OpenColorIO_PS_Context::getenvOCIO(env);
             
             if(!env.empty())
             {

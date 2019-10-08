@@ -72,7 +72,7 @@ static NSString *standardPath = @"/Library/Application Support/OpenColorIO";
         [configurationMenu addItemWithTitle:@"$OCIO"];
         
         [[configurationMenu lastItem] setTag:CSOURCE_ENVIRONMENT];
-		
+        
         std::string env;
         OpenColorIO_PS_Context::getenvOCIO(env);
         
@@ -630,7 +630,7 @@ static NSString *standardPath = @"/Library/Application Support/OpenColorIO";
                 
                 [interpolationMenu addItemWithTitle:@"Cubic"];
                 [[interpolationMenu lastItem] setTag:CINTERP_CUBIC];
-				
+                
                 [[interpolationMenu menu] addItem:[NSMenuItem separatorItem]];
                 
                 [interpolationMenu addItemWithTitle:@"Best"];
